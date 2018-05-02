@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/InventoryOverview"
+    tools:context="com.example.fatoumeh.shumanatorbookstore.NewInventoryActivity">
+    <TextView
+        android:text="@string/product_info_label"
+        style="@style/InventoryTitles" />
+    <EditText
+        android:id="@+id/edit_product_name"
+        android:hint="@string/product_name_edittext"
+        style="@style/ProductSupplierName" />
+    <EditText
+        android:id="@+id/edit_product_price"
+        android:hint="@string/product_price_edittext"
+        android:inputType="numberDecimal"
+        style="@style/PriceQuantity" />
+    <LinearLayout
+        style="@style/InventoryChildLL"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/increase_button"
+            android:text="@string/increase_button_label"
+            style="@style/PlusMinusButton"/>
+        <EditText
+            android:id="@+id/edit_product_quantity"
+            android:hint="@string/product_quantity_edittext"
+            android:inputType="number"
+            android:textAlignment="center"
+            style="@style/PriceQuantity"/>
+        <Button
+            android:id="@+id/decrease_button"
+            android:text="@string/decrease_button_label"
+            style="@style/PlusMinusButton" />
+    </LinearLayout>
+    <TextView
+        android:text="@string/supplier_info_label"
+        style="@style/InventoryTitles"/>
+    <EditText
+        android:id="@+id/edit_supplier_name"
+        android:hint="@string/supplier_name_edittext"
+        style="@style/ProductSupplierName"/>
+    <EditText
+        android:id="@+id/edit_supplier_phone"
+        android:hint="@string/supplier_phone_edittext"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        style="@style/InventoryChildLL"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/save_button"
+            android:text="@string/save_button_label"
+            style="@style/SaveDiscardNewInventory" />
+        <Button
+            android:id="@+id/discard_button"
+            android:text="@string/discard"
+            style="@style/SaveDiscardNewInventory" />
+    </LinearLayout>
+</LinearLayout>

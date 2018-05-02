@@ -1,0 +1,132 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--style of empty inventory info-->
+    <style name="EmptyInventory">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/empty_inventory_margin</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--style of floating action button-->
+    <style name="FAButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--manage buttons-->
+    <style name="SaveDiscardDelete">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_margin">@dimen/min_margin</item>
+    </style>
+
+    <!--style for the new inventory page buttons (Save/discard)-->
+    <style name="SaveDiscardNewInventory">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/min_margin</item>
+    </style>
+
+    <!--supplier phone-->
+    <style name="SupplierPhoneDetails">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <!--child linear layout of the manage inventory screen-->
+    <style name="InventoryChildLL">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--style for the titles in the screen-->
+    <style name="InventoryTitles">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <!--style for the product and supplier name-->
+    <style name="ProductSupplierName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--style for the price and quantity fields-->
+    <style name="PriceQuantity">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--style for plus minus buttons in inventory page-->
+    <style name="PlusMinusButton">
+        <item name="android:layout_height">@dimen/plus_minus_size</item>
+        <item name="android:layout_width">@dimen/plus_minus_size</item>
+    </style>
+
+    <!--overall inventory style-->
+    <style name="InventoryOverview">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_margin">@dimen/min_margin</item>
+    </style>
+
+    <!--list item linear layout-->
+    <style name="ListItemChildLL">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.3</item>
+    </style>
+
+    <!--style for the generic list items-->
+    <style name="GenericStyleListItems">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--style of textview for list items-->
+    <style name="TextViewListItems" parent="GenericStyleListItems">
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <!--list item parent linear layouts-->
+    <style name="ListItemParentLL">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--i am deliberately creating a separate style for the ll containing
+    the price/quantity because i'd like to manage it separately from the parent
+    in the future-->
+    <style name="ListItemDetailsLL" parent="ListItemParentLL"/>
+
+    <!--list item root layout-->
+    <style name="ListItemRootLL">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/min_padding</item>
+    </style>
+
+</resources>

@@ -1,0 +1,4 @@
+#Wed May 02 17:44:07 BST 2018
+base.0=/Users/fatoumeh/AndroidStudioProjects/ShumanatorBookStore/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex

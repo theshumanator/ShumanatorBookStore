@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of inventories -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/each_list_item"
+    style="@style/ListItemRootLL">
+    <LinearLayout
+        style="@style/ListItemParentLL">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/min_margin"
+            style="@style/ListItemChildLL">
+            <TextView
+                android:id="@+id/product_name"
+                tools:text="@string/sample_product_name"
+                android:maxLines="2"
+                android:ellipsize="end"
+                style="@style/TextViewListItems"
+                android:textStyle="bold"/>
+            <LinearLayout
+                style="@style/ListItemDetailsLL" >
+                <TextView
+                    android:id="@+id/product_currency"
+                    android:text="@string/currency"
+                    style="@style/TextViewListItems"  />
+                <TextView
+                    android:id="@+id/product_price"
+                    tools:text="@string/product_price_edittext"
+                    android:layout_marginRight="@dimen/min_margin"
+                    style="@style/TextViewListItems"  />
+                <TextView
+                    android:id="@+id/product_quantity_title"
+                    android:text="@string/remaining_label"
+                    android:layout_marginRight="@dimen/min_text_spacing"
+                    style="@style/TextViewListItems"/>
+                <TextView
+                    android:id="@+id/product_quantity"
+                    tools:text="@string/product_quantity_edittext"
+                    style="@style/TextViewListItems"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/ListItemChildLL">
+            <Button
+                android:id="@+id/manage_button"
+                android:onClick="onManageClicked"
+                android:text="@string/manage"
+                style="@style/GenericStyleListItems"/>
+            <Button
+                android:id="@+id/sale_button"
+                android:onClick="decreaseQuantity"
+                android:text="@string/sale"
+                style="@style/GenericStyleListItems"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

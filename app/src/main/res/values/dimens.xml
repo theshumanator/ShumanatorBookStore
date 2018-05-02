@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--empty inventory margin-->
+    <dimen name="empty_inventory_margin">16dp</dimen>
+
+    <!--fab margin-->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--generic minimum margin-->
+    <dimen name="min_margin">10dp</dimen>
+
+    <!--generic minimum padding-->
+    <dimen name="min_padding">10dp</dimen>
+
+    <!--min spacing between text-->
+    <dimen name="min_text_spacing">3dp</dimen>
+
+    <!-- + and - button dimens-->
+    <dimen name="plus_minus_size">40dp</dimen>
+</resources>

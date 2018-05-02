@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app level-->
+    <string name="app_name">Shumanator Book Store</string>
+    <string name="add_inventory">Add New Inventory</string>
+    <string name="manage_inventory">Manage Inventory</string>
+
+    <!--main screen-->
+    <string name="empty_title_text">The inventory is empty</string>
+    <string name="empty_text">Click on the button on the bottom right to add an inventory</string>
+
+    <!--menu option-->
+    <string name="action_insert_dummy_data">Insert dummy book</string>
+    <string name="action_delete_all_entries">Delete all books</string>
+
+    <!--discarc changes dialog box-->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="stay_here">Stay Here</string>
+
+    <!--delete inventory dialog boxes-->
+    <string name="delete_dialog_msg">Delete this inventory?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--unknown uri exceptions-->
+    <string name="update_unknown_uri">Unknown URI. Cannot do update:</string>
+    <string name="delete_unknown_uri">Unknown URI. Cannot do delete:</string>
+    <string name="insert_unknown_uri">Unknown URI. Cannot do insert:</string>
+    <string name="query_unknown_uri">Unknown URI. Cannot do query:</string>
+    <string name="unknown_uri">Unknown URI for match id:</string>
+
+    <!--insert toasties-->
+    <string name="insert_successful">Inventory has been inserted</string>
+    <string name="insert_not_successful">Error inserting inventory</string>
+
+    <!--input validation toasies-->
+    <string name="missing_fields">ERROR: ensure all fields are completed</string>
+    <string name="invalid_pname">ERROR: Inventory name is missing</string>
+    <string name="invalid_price">ERROR: Zero, negative or empty price is not allowed</string>
+    <string name="invalid_quantity">ERROR: Negative or empty quantity is not allowed</string>
+    <string name="invalid_sname">ERROR: Supplier name is missing</string>
+    <string name="invalid_sphone">ERROR: Supplier phone is missing</string>
+
+    <!--sale toasties-->
+    <string name="no_more_sales">ERROR: Cannot sell more. Quantity is already 0</string>
+    <string name="sales_successful">Sale successful</string>
+
+    <!--bulk delete toasties-->
+    <string name="inventory_bulk_deleted">All inventories were removed</string>
+    <string name="inventory_bulk_not_deleted">Bulk inventory remove not successful</string>
+
+    <!--delete toasties-->
+    <string name="editor_delete_inventory_successful">Inventory deleted</string>
+    <string name="editor_delete_inventory_failed">Error with deleting inventory</string>
+
+    <!--new/manage inventory fields, buttons and labels-->
+    <string name="save_button_label">SAVE</string>
+    <string name="discard_button_label">DISCARD CHANGES</string>
+    <string name="delete_button_label">DELETE PRODUCT</string>
+    <string name="order_button_label">ORDER MORE</string>
+    <string name="product_name_edittext">Product Name</string>
+    <string name="product_price_edittext">Price</string>
+    <string name="product_quantity_edittext">Quantity</string>
+    <string name="supplier_name_edittext">Supplier Name</string>
+    <string name="supplier_phone_edittext">Supplier Phone</string>
+    <string name="product_info_label">PRODUCT INFO</string>
+    <string name="supplier_info_label">SUPPLIER INFO</string>
+    <string name="increase_button_label">+</string>
+    <string name="decrease_button_label">-</string>
+    <string name="sale">SALE</string>
+    <string name="manage">MANAGE</string>
+    <string name="remaining_label">Remaining:</string>
+    <string name="sample_product_name">The longest product name in the history of</string>
+
+    <!--dummy data-->
+    <string name="dummy_pname">Harry Potter</string>
+    <string name="dummy_quantity">4</string>
+    <string name="dummy_price">17.5</string>
+    <string name="dummy_sname">JK Rowling</string>
+    <string name="dummy_sphone">018478827749</string>
+
+    <!--Miscallenous/used by multiple pages-->
+    <string name="min_qty">5</string>
+    <string name="sort_asc">ASC</string>
+    <string name="currency">£</string>
+</resources>
